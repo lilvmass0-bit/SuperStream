@@ -1,0 +1,46 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+.top-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 50px;
+    background: black;
+    z-index: 10;
+}
+</style>
+</head>
+<body>
+<div class="video-container">
+  <iframe 
+    src="https://drive.google.com/file/d/1pb02B4e-9syD-3pm_SJwY89KyzEIi5v8/preview"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+  <div class="top-cover"></div>
+</div>
+</body>
+</html>
